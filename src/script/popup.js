@@ -43,7 +43,7 @@ chrome.storage.local.get({mediaAccess: false}, function(items) {
         Array.prototype.forEach.call(event.results, result => {
           sentence += `${result[0].transcript} `
         })
-        textNode.innerHTML = sentence
+        textNode.innerHTML = sentence.trim()
       }
       newRecognition.onerror = err => {
         textNode.classList.add('hidden')

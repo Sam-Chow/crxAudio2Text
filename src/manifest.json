@@ -22,6 +22,9 @@
 		"page": "html/options.html",
     "open_in_tab": true
   },
-  "permissions" : ["storage"],
+  "permissions" : [
+    "storage",
+    "webRequest"
+  ],
   "homepage_url": "https://github.com/Sam-Chow/crxAudio2Text"
 }

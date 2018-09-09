@@ -3,6 +3,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>turn what you say into words</title>
     <style>
+      .hidden {
+        display: none;
+      }
+
       .main {
         margin: 0 auto;
         max-width: 640px;
@@ -39,12 +43,26 @@
         background-color: #555;
       }
 
-      .allow-media {
-        margin-top: 20px;
+      .item {
+        margin-top: 40px;
+        line-height: 1;
+      }
+
+      .item > div {
+        margin-top: 15px;
+      }
+
+      .item > div:first-child {
+        margin-top: 0;
       }
 
       .allow-media button {
         margin-top: 10px;
+      }
+
+      .inline-img {
+        width: 24px;
+        vertical-align: middle;
       }
     </style>
   </head>
@@ -57,9 +75,25 @@
       <div class="subtitle">
         可以将您的声音转化成文字
       </div>
-      <div class="allow-media">
-        <div class="quote">提醒: 此插件需要您允许 Chrome 使用您的声音设备</div>
+      <div class="allow-media item">
+        <div class="quote">此插件需要您允许 Chrome 使用您的声音设备</div>
         <button id="allow-media-access-button">点击允许</button>
+        <div class="allowed-media hidden">
+          <img src="../icon/smile.png" class="inline-img"/>
+          <span>您已经允许 Chrome 访问您的声音设备</span>
+        </div>
+      </div>
+      <div class="item">
+        <div class="quote">此插件需要在 Google 可以访问的前提下使用, 否则可能无法进行语音识别</div>
+        <div class="checking-network">正在检测网络环境…</div>
+        <div class="google-access hidden">
+          <img src="../icon/smile.png" class="inline-img" />
+          <span>您的网络环境可以进行语音识别！</span>
+        </div>
+        <div class="no-google-access hidden">
+          <img src="../icon/frown.png" class="inline-img" />
+          <span>您的网络环境无法进行语音识别！</span>
+        </div>
       </div>
     </div>
     <script src="../script/polyfill.js"></script>
