@@ -1,0 +1,16 @@
+node_modules
+
+# Logs
+logs
+*.log
+
+# Visual Studio Code
+.vscode
+.history
+
+# OSX Files
+.DS_Store
+
+# libs
+/lib
+/es

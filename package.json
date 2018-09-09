@@ -1,0 +1,9 @@
+{
+  "name": "crx_audio2text",
+  "version": "0.0.1",
+  "description": "🤭 Chrome extension: turning what you say into words",
+  "main": "index.js",
+  "repository": "git@github.com:Sam-Chow/crxAudio2Text.git",
+  "author": "Sam-Chow",
+  "license": "MIT"
+}
